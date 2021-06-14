@@ -11,10 +11,12 @@ import MyNotes from './mynotes';
 import NoteSceen from './note';
 import AuthLoading from './authloading';
 import SignIn from './signin';
+import SignUp from './signup';
 import Settings from './settings';
 
 const AuthStack = createStackNavigator({
   SignIn: SignIn,
+  SignUp: SignUp,
 });
 
 const FeedStack = createStackNavigator({
