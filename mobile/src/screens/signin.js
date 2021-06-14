@@ -7,7 +7,7 @@ import UserForm from '../components/UserForm';
 import Loading from '../components/Loading';
 
 const SIGNIN_USER = gql`
-  mutation signIn($email: String, $password: String) {
+  mutation signIn($email: String, $password: String!) {
     signIn(email: $email, password: $password)
   }
 `;
